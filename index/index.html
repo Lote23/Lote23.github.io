@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shoe Store</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="projectname">Shoe Store</h1>     
+    <nav>
+      <ul>
+        <li><a class="projectoption2" href="https://www.amazon.com/s?k=new+arrivals+shoes&crid=MPJJ0EFTJNTM&sprefix=new+arrivals+shoes%2Caps%2C488&ref=nb_sb_ss_ts-doa-p_3_18">New Arrivals</a></li>
+        <li><a class="projectoption2" href="https://www.amazon.com/s?k=best+sellers+shoes&crid=2PPFDYSSM49RF&sprefix=best+sellers+shoes%2Caps%2C520&ref=nb_sb_ss_ts-doa-p_2_18">Best Sellers</a></li>    
+        <li><a class="projectoption2" href="https://www.amazon.com/s?k=shoes+for+sale&crid=M8CPGMI042CV&sprefix=shoes+for+sale%2Caps%2C1769&ref=nb_sb_noss_1">Sale</a></li>
+        <li><a class="Addtocart" href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart"> cart</a></li>
+>    
+                                                                           
+        <a href="mainlogin.html" class="login-button">Login</button></a>
+        <a href="signup.html" class="signup-button">Sign up</button></a>   
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="new-arrivals">                      
+      <h2 class="projectoption">New Arrivals</h2>
+      <div class="shoe-card">
+        <img class="running" src="running.png" alt="shoe image">
+        <h2 class="shoename">Running Shoes</h3>
+        <p class="shoeprice">$73</p>
+      </div>
+
+      <a href="https://www.amazon.com/s?k=running+shoes&crid=UUUDPBJK2JY6&sprefix=running%2Caps%2C1100&ref=nb_sb_ss_ts-doa-p_2_7" class="Buynow-button">Buy now</button></a>                                                                                   
+
+      <!-- Add more shoe cards here -->
+    </section>
+    <section id="best-sellers">
+      <h2 class="projectoption">Best Sellers</h2>
+      <div class="shoe-card">
+        <img class="basket" src="basketball.png" alt="shoe image">
+        <h3 class="shoename">Basketball Shoes</h3>
+        <p class="shoeprice">$83</p>
+        
+        <a href="https://www.amazon.com/s?k=basketball+shoes&crid=1ZZKG12L69MQV&sprefix=b%2Caps%2C598&ref=nb_sb_ss_ts-doa-p_1_1 " class="Buynow-button">Buy now</button></a>                                                                                   
+
+
+      </div>
+      <!-- Add more shoe cards here -->
+    </section>
+    <section id="sale">
+      <h2 class="projectoption">Sale</h2>
+      <div class="shoe-card">
+        <img class="walking" src="walking.png" alt="shoe image">
+        <h3 class="shoename">Walking Shoes</h3>
+        <p class="shoeprice">$69</p>
+        <a href="https://www.amazon.com/s?k=walking+shoes&crid=36KTDYZHJLGKG&sprefix=walki%2Caps%2C708&ref=nb_sb_ss_ts-doa-p_1_5" class="Buynow-button">Buy now</button></a>                                                                                   
+
+      </div>
+      <!-- Add more shoe cards here -->
+    </section>
+  </main>
+  <footer>
+   
+  </footer>       
+<body class="shoeground" background="shoe.png"> <br>
+  
+  
+  <li><a class="amazon" href="https://www.amazon.com/">Back to amazon</a></li>     
+
+  <a href="aboutus.html"  p class="aboutus"> About Us</p></a>
+
+  <marquee class="text" direction="right" behaviour="scrolling" > 
+    AMAZON SHOE STORES
+  </marquee>
+  
+</body>
+</html>
+
+<style>
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  section {
+    width: 30%;
+    text-align: center;
+  }
+  .basket{ 
+  width:150px ;
+  object-fit: contain;
+  object-position:center ;
+  }
+  .running{ 
+  object-fit: contain;
+  object-position:center ;
+  width:150px ;
+  }
+  .walking{
+  object-fit: contain;
+  object-position:center ;
+  width:150px;
+  }
+  .Buynow-button{ 
+    background-color:rgb(0, 0, 0) ;
+    color:rgb(152, 152, 152) ;
+     height:6vh;
+     width: 10vw;
+     margin-left:147PX ;
+     display:flex;
+     align-items: center;
+     justify-content:center;
+     flex-direction:column;   
+     font-size:21px;
+     box-sizing:border-box;
+     margin-top:0;      
+  }
+  .Buynow-button:hover{ 
+    opacity:0.8;
+  }
+  .Buynow-button:active{ 
+    opacity:0.5;
+  }
+  .Buynow-button{ 
+    background-color:rgb(0, 0, 0) ;
+    color:rgb(152, 152, 152) ;
+     height:6vh;
+     width:10vw;
+     margin-left:147PX ;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     flex-direction:column;   
+     font-size:21px;
+     box-sizing:border-box;
+     margin-top:0;      
+  }
+  .Buynow-button:hover{
+    opacity:0.8;
+  }
+  .Buynow-button:active{
+    opacity:0.5;
+  }
+  .Buynow-button{
+    background-color:rgb(0, 0, 0) ;
+    color:rgb(152, 152, 152) ;
+     height:6vh;
+     width:10vw;
+     margin-left:147PX ;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     flex-direction:column;   
+     font-size:21px;
+     box-sizing:border-box;
+     margin-top:0;     
+  }
+  .Buynow-button:hover{
+    opacity:0.8;
+  }
+  .Buynow-button:active{
+    opacity:0.5;
+  }
+  
+   .shoeprice{ 
+   color: rgb(0, 0, 0);
+   }
+   .shoename{ 
+    color: rgb(0, 0, 0);
+    font-size:25px ;
+   }
+   .projectname{ 
+    color:rgb(152, 152, 152) ;
+   }
+   .projectoption{ 
+    color:rgb(0, 0, 0) ;
+   }
+   .projectoption2{ 
+    color: rgb(152, 152, 152);
+   }
+   .amazon{
+    color:rgb(0, 0, 0) ;
+    text-align: center;
+    margin-left:1369px ;
+    font-size:18px;
+   }
+   .Addtocart{
+   color: rgb(152, 152, 152);
+   margin-left:8px ;
+   }
+   .amazon-logo{ 
+   object-fit: contain;
+   width:125px;
+   margin-right:315px ;
+   filter: brightness(80%);
+   filter: drop-shadow(10px 10px 10px black);
+   }
+   .greetings{
+   font-size:29px ;
+   font-weight: bold;
+   font-family:Tahoma;
+   animation:3s
+   }
+   .aboutus{
+   font-size:18px ;
+   font-weight: lighter;
+   font-family: Arial;
+   margin-left:21px;       
+   color: black;
+   }
+   .login-button{ 
+    background-color:rgb(152, 152, 152) ;
+    color:rgb(0, 0, 0) ;
+     height:6vh;
+     width:5vw;
+     margin-left:11PX ;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     flex-direction:column;   
+     font-size:13px;
+     box-sizing:border-box;
+     margin-top:0;      
+  }        
+       .Buynow-button:hover{                    
+         opacity: 0.8;
+       }
+   
+       .Buynow-button:active{                    
+         opacity:0.5;
+       }
+  
+  
+       .signup-button{ 
+    background-color:rgb(152, 152, 152) ;
+    color:rgb(0, 0, 0) ;
+     height:6vh;
+     width: 5vw;
+     margin-left:11PX ;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     flex-direction:column;   
+     font-size:13px;
+     box-sizing:border-box;
+     margin-top:0;      
+  }        
+       .Buynow-button:hover{                    
+         opacity: 0.8;
+       }
+   
+       .Buynow-button:active{                    
+         opacity:0.5;
+       }
+       .text{
+        text-align: center;
+        font-size:50px ;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+       }
+   </style>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,498 @@
+
+<!DOCTYPE html
+<!-- Code by CodeWithNepal - codewithnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form validation using HTML CSS & JS | CodeWithNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body> 
+  <div class="wrapper">
+    <p class="amazon">Welcome To Amazon's Shoe Store</p>
+    <header class="signupform">Signup Form</header>
+    <form action="index.html">
+      <label class="signdz"    for="username">Username:</label>
+      <input  type="text" id="Username" name="username" required><br>
+
+      <label class="signdz"  for="email">Email Adress:</label>
+      <input  type="email" id="email" name="email" required><br>                                                   
+
+      <label class="signdz"  for="password">Password:</label>
+      <input  type="password" id="password" name="password" required><br>
+      <label class="signdz"  for="confirm-password">Confirm Password:</label>
+      <input  type="password" id="confirm-password" name="confirm-password" required><br>
+
+    <input class="signup-button" a href="index.html" type="submit" value="signup" onclick="validateform(event)"></a>
+
+    </form>
+    <div class="sign-txt">Alredy a member? <a href="mainlogin.html" class="log">   login</a></div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+  <body class="signup" background="signup.png"> <br> 
+   
+</body>
+</html>>
+
+<style> 
+
+.container{
+width:1000px ;
+margin:0 auto;
+background-color: rgb(255, 255, 255);
+padding: 50px; ;
+box-shadow:0 0 10px rgba(0,0,0,0.1) ;
+}
+
+
+h1{
+text-align: center;
+margin-bottom:50px ;
+}
+
+
+label {
+font-weight: bold;
+margin-bottom:10px ;
+display: block
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+width:100% ;
+padding: 10px;
+margin-bottom:20px ;
+border:1px solid #ccc ;
+box-sizing: border-box;
+border-radius:4px ;
+
+}
+
+
+input[type="submit"] {
+background-color: rgb(200, 98, 31);
+color: rgb(255, 255, 255);
+padding:10PX 20PX ;
+border:none ;
+border-radius: 4px;
+cursor: pointer;
+width:16vw ;
+font-size:21px ;
+}
+
+
+input[type="submit"]:hover{
+background-color:45ao49 ;
+}
+
+.error{
+color:rgb(103, 0, 0) ;
+font-size: 14px;
+margin-top:5px ;
+}
+
+
+.form-group{
+  margin-left: 20px;
+}
+
+
+@media only screen and(max-width:600px) {
+.container{
+width: 90%;
+padding: 20px;
+}
+}
+.amazon{
+font-size:50px ;
+font-weight: bold;
+font-family: Arial,sans-serif;
+color: rgb(255, 255, 255);
+}
+.signupform{
+font-size:50px ;
+font-weight: bold;
+font-family: Arial,sans-serif;
+color:rgb(255, 255, 255) ;
+}
+.signdz{
+font-size:35px ;
+font-family: Arial, sans-serif;
+font-weight: lighter;
+color: rgb(189, 79, 20);
+}
+.sign-txt {
+font-size:18px ;
+font-weight: lighter;
+font-family: Arial,sans-serif;
+color:rgb(189, 79, 20) ;
+}
+.log{
+color: rgb(255, 255, 255);
+}
+.signup{
+object-fit: contain;
+object-position:center ;
+width:1527px ;
+
+}
+</style>
+
+
+<script>
+ function validateform (event) { 
+  const username =document.getElementById("username").value;
+  const  email    =document.getElementById("email").value;
+  const  password =document.getElementById("password").value;
+  const confirmPassword =document.getElementById("confirm-password").value;
+
+ // Check if password and confirm password match
+ if    (password !== confirmPassword) { 
+      alert("Passwords do not match!");
+      event.preventDefault();
+      return false;
+    }
+
+ // Check if username is valid (e.g alphanumeric characters only)
+   const validUsername = /^ [a-zA-Z0-9] +$/.test(username);
+   if ( !validUsername){ 
+   alert("Username is invalid. Only alphanumeric characters are allowed.");
+   event.preventDefault();
+  return false;
+   }
+
+ // Check if email is valid
+  const validEmail = /^\S+@\S+\.\S+$/.test(email);
+  if (!validEmail){
+    alert("Email is invalid.");
+    event.preventDefault();
+    return false;
+  }
+
+ // Check if  password is strong (e.g. at least 8 characters, at least 1 uppercase letter , and least 1 digit)
+   const strongPassword =/^(?=.*[a-z]) (?=.*[A-Z]) (?=.*\d) [a-zA-Z\d]{8,}$/.test(password);
+   if (!strongPassword) {
+     alert ("Password must be at least 8 characters long and contain at least 1 uppercase letter and 1 digit.");
+     event.preventDefault();
+     return false
+   }
+
+ // validation passed,submit the form
+  return true;
+
+ }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
